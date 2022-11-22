@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: yellow;
+    padding: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    display: inline-block;
+}
+
+.grid-wrapper > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: 200px;
+    border: 1px soi rgb(104, 104, 104);
+}
+
+.grid-wrapper .wide{
+    grid-column: span 2;
+}
+.grid-wrapper .tall{
+    grid-row: span 2;
+}
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+h1{
+    font-family: verdana;
+    width: 100%;
+    height: 100px;
+    background-color: Yellow;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
